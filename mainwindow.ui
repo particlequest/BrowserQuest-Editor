@@ -25,7 +25,7 @@
         <string>Sprites</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_2">
-        <item row="1" column="0">
+        <item row="2" column="0">
          <widget class="QFrame" name="sprites_sprite_list_tool_buttons_frame">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
@@ -126,7 +126,7 @@
           </layout>
          </widget>
         </item>
-        <item row="0" column="0">
+        <item row="1" column="0">
          <widget class="QListWidget" name="sprites_list_view">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
@@ -142,7 +142,17 @@
           </property>
          </widget>
         </item>
-        <item row="0" column="1" rowspan="2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="sprites_sprites_label">
+          <property name="text">
+           <string>Sprites</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" rowspan="3">
          <widget class="QFrame" name="sprites_form_frame">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -350,371 +360,140 @@
               <string>Animations</string>
              </property>
              <layout class="QGridLayout" name="gridLayout_5">
-              <item row="1" column="1" colspan="3">
-               <widget class="QLineEdit" name="sprites_animation_name_lineEdit"/>
-              </item>
-              <item row="1" column="0">
-               <widget class="QLabel" name="sprites_animation_name_label">
+              <item row="2" column="1">
+               <widget class="QLabel" name="sprites_animation_images_16_label">
                 <property name="text">
-                 <string>Name</string>
+                 <string>Images queue</string>
                 </property>
                 <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                 </property>
                </widget>
               </item>
-              <item row="2" column="0" colspan="4">
-               <widget class="QFrame" name="sprites_animation_images_frame">
+              <item row="3" column="1">
+               <widget class="QListWidget" name="sprites_animation_images_16_listView"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QFrame" name="sprites_animation_images_16_controls_frame">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>0</height>
+                 </size>
+                </property>
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
                 </property>
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
                 </property>
-                <layout class="QGridLayout" name="gridLayout_7">
-                 <item row="0" column="3">
-                  <widget class="QLabel" name="sprites_animation_images_32_label">
-                   <property name="text">
-                    <string>32</string>
+                <layout class="QVBoxLayout" name="verticalLayout">
+                 <property name="spacing">
+                  <number>6</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>6</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>6</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>6</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>6</number>
+                 </property>
+                 <item>
+                  <spacer name="sprites_animation_images_16_controls_spacer">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
                    </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="1">
-                  <widget class="QListWidget" name="sprites_animation_images_16_listView"/>
-                 </item>
-                 <item row="0" column="1">
-                  <widget class="QLabel" name="sprites_animation_images_16_label">
-                   <property name="text">
-                    <string>16</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="3">
-                  <widget class="QListWidget" name="sprites_animation_images_32_listView"/>
-                 </item>
-                 <item row="0" column="5">
-                  <widget class="QLabel" name="sprites_animation_images_48_label">
-                   <property name="text">
-                    <string>48</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="5">
-                  <widget class="QListWidget" name="sprites_animation_images_48_listView"/>
-                 </item>
-                 <item row="1" column="0">
-                  <widget class="QFrame" name="sprites_animation_images_16_controls_frame">
-                   <property name="minimumSize">
+                   <property name="sizeHint" stdset="0">
                     <size>
                      <width>20</width>
-                     <height>0</height>
+                     <height>40</height>
                     </size>
                    </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="sprites_animation_images_16_up_button">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
                    </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
+                   <property name="text">
+                    <string>...</string>
                    </property>
-                   <layout class="QVBoxLayout" name="verticalLayout">
-                    <property name="spacing">
-                     <number>6</number>
-                    </property>
-                    <property name="leftMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="topMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="rightMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="bottomMargin">
-                     <number>0</number>
-                    </property>
-                    <item>
-                     <spacer name="sprites_animation_images_16_controls_spacer">
-                      <property name="orientation">
-                       <enum>Qt::Vertical</enum>
-                      </property>
-                      <property name="sizeHint" stdset="0">
-                       <size>
-                        <width>20</width>
-                        <height>40</height>
-                       </size>
-                      </property>
-                     </spacer>
-                    </item>
-                    <item>
-                     <widget class="QToolButton" name="sprites_animation_images_16_up_button">
-                      <property name="text">
-                       <string>...</string>
-                      </property>
-                      <property name="icon">
-                       <iconset resource="resources.qrc">
-                        <normaloff>:/icons/img/icons/up.png</normaloff>:/icons/img/icons/up.png</iconset>
-                      </property>
-                      <property name="autoRaise">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QToolButton" name="sprites_animation_images_16_down_button">
-                      <property name="text">
-                       <string>...</string>
-                      </property>
-                      <property name="icon">
-                       <iconset resource="resources.qrc">
-                        <normaloff>:/icons/img/icons/down.png</normaloff>:/icons/img/icons/down.png</iconset>
-                      </property>
-                      <property name="autoRaise">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QToolButton" name="sprites_animation_images_16_open_button">
-                      <property name="text">
-                       <string>...</string>
-                      </property>
-                      <property name="icon">
-                       <iconset resource="resources.qrc">
-                        <normaloff>:/icons/img/icons/open-folder.png</normaloff>:/icons/img/icons/open-folder.png</iconset>
-                      </property>
-                      <property name="autoRaise">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QToolButton" name="sprites_animation_images_16_remove_button">
-                      <property name="text">
-                       <string>...</string>
-                      </property>
-                      <property name="icon">
-                       <iconset resource="resources.qrc">
-                        <normaloff>:/icons/img/icons/remove.png</normaloff>:/icons/img/icons/remove.png</iconset>
-                      </property>
-                      <property name="autoRaise">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/icons/img/icons/up.png</normaloff>:/icons/img/icons/up.png</iconset>
+                   </property>
+                   <property name="autoRaise">
+                    <bool>true</bool>
+                   </property>
                   </widget>
                  </item>
-                 <item row="1" column="2">
-                  <widget class="QFrame" name="sprites_animation_images_16_controls_frame_2">
-                   <property name="minimumSize">
-                    <size>
-                     <width>20</width>
-                     <height>0</height>
-                    </size>
+                 <item>
+                  <widget class="QToolButton" name="sprites_animation_images_16_down_button">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
                    </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
+                   <property name="text">
+                    <string>...</string>
                    </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/icons/img/icons/down.png</normaloff>:/icons/img/icons/down.png</iconset>
                    </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_2">
-                    <property name="spacing">
-                     <number>6</number>
-                    </property>
-                    <property name="leftMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="topMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="rightMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="bottomMargin">
-                     <number>0</number>
-                    </property>
-                    <item>
-                     <spacer name="sprites_animation_images_32_controls_spacer">
-                      <property name="orientation">
-                       <enum>Qt::Vertical</enum>
-                      </property>
-                      <property name="sizeHint" stdset="0">
-                       <size>
-                        <width>20</width>
-                        <height>40</height>
-                       </size>
-                      </property>
-                     </spacer>
-                    </item>
-                    <item>
-                     <widget class="QToolButton" name="sprites_animation_images_32_up_button">
-                      <property name="text">
-                       <string>...</string>
-                      </property>
-                      <property name="icon">
-                       <iconset resource="resources.qrc">
-                        <normaloff>:/icons/img/icons/up.png</normaloff>:/icons/img/icons/up.png</iconset>
-                      </property>
-                      <property name="autoRaise">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QToolButton" name="sprites_animation_images_32_down_button">
-                      <property name="text">
-                       <string>...</string>
-                      </property>
-                      <property name="icon">
-                       <iconset resource="resources.qrc">
-                        <normaloff>:/icons/img/icons/down.png</normaloff>:/icons/img/icons/down.png</iconset>
-                      </property>
-                      <property name="autoRaise">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QToolButton" name="sprites_animation_images_32_open_button">
-                      <property name="text">
-                       <string>...</string>
-                      </property>
-                      <property name="icon">
-                       <iconset resource="resources.qrc">
-                        <normaloff>:/icons/img/icons/open-folder.png</normaloff>:/icons/img/icons/open-folder.png</iconset>
-                      </property>
-                      <property name="autoRaise">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QToolButton" name="sprites_animation_images_32_remove_button">
-                      <property name="text">
-                       <string>...</string>
-                      </property>
-                      <property name="icon">
-                       <iconset resource="resources.qrc">
-                        <normaloff>:/icons/img/icons/remove.png</normaloff>:/icons/img/icons/remove.png</iconset>
-                      </property>
-                      <property name="autoRaise">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
+                   <property name="autoRaise">
+                    <bool>true</bool>
+                   </property>
                   </widget>
                  </item>
-                 <item row="1" column="4">
-                  <widget class="QFrame" name="sprites_animation_images_16_controls_frame_3">
-                   <property name="minimumSize">
-                    <size>
-                     <width>20</width>
-                     <height>0</height>
-                    </size>
+                 <item>
+                  <widget class="QToolButton" name="sprites_animation_images_16_open_button">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
                    </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
+                   <property name="text">
+                    <string>...</string>
                    </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/icons/img/icons/open-folder.png</normaloff>:/icons/img/icons/open-folder.png</iconset>
                    </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_3">
-                    <property name="spacing">
-                     <number>6</number>
-                    </property>
-                    <property name="leftMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="topMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="rightMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="bottomMargin">
-                     <number>0</number>
-                    </property>
-                    <item>
-                     <spacer name="sprites_animation_images_48_controls_spacer">
-                      <property name="orientation">
-                       <enum>Qt::Vertical</enum>
-                      </property>
-                      <property name="sizeHint" stdset="0">
-                       <size>
-                        <width>20</width>
-                        <height>40</height>
-                       </size>
-                      </property>
-                     </spacer>
-                    </item>
-                    <item>
-                     <widget class="QToolButton" name="sprites_animation_images_48_up_button">
-                      <property name="text">
-                       <string>...</string>
-                      </property>
-                      <property name="icon">
-                       <iconset resource="resources.qrc">
-                        <normaloff>:/icons/img/icons/up.png</normaloff>:/icons/img/icons/up.png</iconset>
-                      </property>
-                      <property name="autoRaise">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QToolButton" name="sprites_animation_images_48_down_button">
-                      <property name="text">
-                       <string>...</string>
-                      </property>
-                      <property name="icon">
-                       <iconset resource="resources.qrc">
-                        <normaloff>:/icons/img/icons/down.png</normaloff>:/icons/img/icons/down.png</iconset>
-                      </property>
-                      <property name="autoRaise">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QToolButton" name="sprites_animation_images_48_open_button">
-                      <property name="text">
-                       <string>...</string>
-                      </property>
-                      <property name="icon">
-                       <iconset resource="resources.qrc">
-                        <normaloff>:/icons/img/icons/open-folder.png</normaloff>:/icons/img/icons/open-folder.png</iconset>
-                      </property>
-                      <property name="autoRaise">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QToolButton" name="sprites_animation_images_48_remove_button">
-                      <property name="text">
-                       <string>...</string>
-                      </property>
-                      <property name="icon">
-                       <iconset resource="resources.qrc">
-                        <normaloff>:/icons/img/icons/remove.png</normaloff>:/icons/img/icons/remove.png</iconset>
-                      </property>
-                      <property name="autoRaise">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
+                   <property name="autoRaise">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="sprites_animation_images_16_remove_button">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="text">
+                    <string>...</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="resources.qrc">
+                     <normaloff>:/icons/img/icons/remove.png</normaloff>:/icons/img/icons/remove.png</iconset>
+                   </property>
+                   <property name="autoRaise">
+                    <bool>true</bool>
+                   </property>
                   </widget>
                  </item>
                 </layout>
@@ -787,6 +566,19 @@
                 </layout>
                </widget>
               </item>
+              <item row="1" column="1" colspan="2">
+               <widget class="QLineEdit" name="sprites_animation_name_lineEdit"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="sprites_animation_name_label">
+                <property name="text">
+                 <string>Name</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
               <item row="0" column="1">
                <widget class="QComboBox" name="sprites_animation_comboBox">
                 <property name="sizePolicy">
@@ -830,52 +622,10 @@
               <string>Preview</string>
              </property>
              <layout class="QGridLayout" name="gridLayout_4">
-              <item row="1" column="1">
-               <widget class="QToolButton" name="sprites_32x32_button">
-                <property name="text">
-                 <string>32</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="0">
-               <widget class="QToolButton" name="sprites_16x16_button">
-                <property name="text">
-                 <string>16</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="checked">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="2">
-               <widget class="QToolButton" name="sprites_48x48_button">
-                <property name="text">
-                 <string>48</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="0" colspan="3">
+              <item row="0" column="0" colspan="2">
                <widget class="QWidget" name="sprites_preview_widget" native="true">
                 <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                   <horstretch>0</horstretch>
                   <verstretch>0</verstretch>
                  </sizepolicy>
@@ -935,7 +685,7 @@
     <property name="title">
      <string>File</string>
     </property>
-    <addaction name="actionLoad"/>
+    <addaction name="actionOpenProject"/>
     <addaction name="separator"/>
     <addaction name="actionExit"/>
    </widget>
@@ -956,7 +706,7 @@
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="actionLoad">
+  <action name="actionOpenProject">
    <property name="text">
     <string>Open Project</string>
    </property>
